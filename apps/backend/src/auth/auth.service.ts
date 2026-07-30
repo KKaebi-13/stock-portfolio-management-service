@@ -19,5 +19,9 @@ export class AuthService {
     this.inMemoryToken = newToken;
     return newToken;
   }
+
+  deleteToken(): void {
+    this.inMemoryToken = null;
+  }
 }
 
